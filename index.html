@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windsor Chess Lions Tournament</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white py-24 text-center px-4 fade-in">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl font-bold mb-6 leading-tight">Master Chess With<br>Windsor Chess Lions</h1>
+            <p class="text-xl mb-8">Join our tournament at Riverside Library - November 23, 2024</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors">
+                Register today!
+            </button>
+        </div>
+    </header>
+
+    <!-- Tournament Details -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 fade-in">Tournament Details</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Time -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center fade-in delay-100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Round Times</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Round 1: 12:45 PM</li>
+                        <li>Round 2: 1:45 PM</li>
+                        <li>Round 3: 2:25 PM</li>
+                        <li>Round 4: 3:45 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Location -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center fade-in delay-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Location</h3>
+                    <p class="text-gray-600">Riverside Library<br>Windsor, ON</p>
+                </div>
+
+                <!-- Registration -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center fade-in delay-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Registration</h3>
+                    <p class="text-gray-600">Entry Fee: $20<br>Space is limited</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-16 bg-gray-100 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 fade-in">Why Play Chess?</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- Critical Thinking -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center fade-in delay-100">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Critical Thinking</h3>
+                    <p class="text-gray-600">Develops problem-solving skills and strategic thinking</p>
+                </div>
+
+                <!-- Concentration -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center fade-in delay-200">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Concentration</h3>
+                    <p class="text-gray-600">Improves focus and attention span</p>
+                </div>
+
+                <!-- Social Skills -->
+                <div class="bg-white rounded-lg shadow-lg p-8 text-center fade-in delay-300">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Social Skills</h3>
+                    <p class="text-gray-600">Build sportsmanship and friendship</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-6 text-center fade-in">
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold">Email us to level up your chess!</h3>
+                    <a href="mailto:windsorchesslions@gmail.com" class="text-blue-600 hover:text-blue-700 transition-colors">
+                        windsorchesslions@gmail.com
+                    </a>
+                </div>
+                
+                <div class="space-y-2">
+                    <h3 class="text-xl font-semibold">Have a question? Call us!</h3>
+                    <div class="space-y-1">
+                        <a href="tel:226-260-8397" class="block text-blue-600 hover:text-blue-700 transition-colors">
+                            (226) 260-8397
+                        </a>
+                        <a href="tel:614-282-0138" class="block text-blue-600 hover:text-blue-700 transition-colors">
+                            (614) 282-0138
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center fade-in">
+            <p>© 2024 Windsor Chess Lions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer to trigger animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        // Observe all elements with fade-in class
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Trigger animation for hero section immediately
+        document.querySelector('header').classList.add('visible');
+    </script>
+</body>
+</html>
